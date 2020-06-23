@@ -10,6 +10,7 @@
     zzz
      z
 """
+#We determine each pyramid amount of floors by the user input
 floors = int(input().strip())
 
 #Calculating the intermediate floor between the two pyramids
