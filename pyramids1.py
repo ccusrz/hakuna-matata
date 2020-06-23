@@ -1,5 +1,4 @@
-#Chaotic implementation of a z-character double-pyramid given an arbitrary boundary that
-#that determines the numbers of floors of both upper and lower pyramids.
+#Chaotic implementation of a z-character double-pyramid.
 
 """
 3-levels output example:
