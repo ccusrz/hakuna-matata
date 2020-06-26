@@ -1,4 +1,4 @@
-#Chaotic implementation of a z-character double-pyramid.
+#Chaotic implementation of a z-rhombus.
 
 """
 3-levels output example:
@@ -11,14 +11,14 @@
      z
 """
 
-#We determine each pyramid amount of floors by the user input
+#We determine each side's altitude
 floors = int(input())
 x = 1
 
-#Calculation of first n white spaces
+#Calculation of diagonal angles
 white_spaces = (x+2*floors)+(floors+3)
 
-#Printing out the first pyramid
+#Printing out the upper triangle
 for i in range(floors):
     for j in range(white_spaces):
         print(" ", end = "")
@@ -28,14 +28,14 @@ for i in range(floors):
     x += 2
     print("")
 
-#Printing out intermediate floor
+#Printing out intermediate axis
 for i in range(x+3): 
     print(" ", end = "")
 for i in range(x):
     print("z", end = "")
 print("")
 
-#Printing out the second pyramid
+#Printing out the lower triangle
 white_spaces = x + 4
 x-=2
 for i in range(floors):
