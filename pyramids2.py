@@ -1,4 +1,4 @@
-#Less chaotic implementation of a z-character dual pyramid.
+#Less chaotic implementation of a z-rhombus.
 
 """
 3-levels output example:
@@ -10,14 +10,14 @@
     zzz
      z
 """
-#We determine each pyramid amount of floors by the user input
+#We determine each side's altitude
 floors = int(input().strip())
 
-#Calculating the intermediate floor between the two pyramids
+#Calculating the intermediate axis of simmetry
 inter_floor = (floors * 2) + 1
 
-#Filling in one pyramid and also outlining it with white spaces
-pyramid = []
+#Filling in one triangle and also diagonals
+triangle = []
 white_spaces = 0
 while inter_floor >= 1:
     aux = ""
@@ -25,12 +25,12 @@ while inter_floor >= 1:
         aux += " "
     for i in range(inter_floor):
         aux += "z"
-    pyramid.append(aux)
+    triangle.append(aux)
     white_spaces += 1
     inter_floor -= 2
 
-#Printing out two pyramids
-for i in pyramid[::-1]:
+#Printing out the two triangles
+for i in triangle[::-1]:
     print(i)
-for i in pyramid[1:]:
+for i in triangle[1:]:
     print(i)
