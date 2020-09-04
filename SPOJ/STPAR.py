@@ -1,6 +1,6 @@
-import psyco
-psyco.full()
-p = input()
+#https://www.spoj.com/problems/STPAR/
+#author: ccusrz
+#2020-09-02|22:09:49
 while p != '0':
 	s = [1001]
 	x = -1
