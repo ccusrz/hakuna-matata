@@ -1,3 +1,5 @@
+#author: ccusrz
+#2020-09-04@08:36:19
 #I won't forget you "p = k.values()". Such a bastard :)
 homo = 0
 k = {}                    
