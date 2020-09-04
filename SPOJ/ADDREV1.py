@@ -1,5 +1,6 @@
 #First approach for https://www.spoj.com/problems/ADDREV/
-#ccusrz@2020-09-01@23:31:38
+#author: ccusrz
+#2020-09-01|23:31:38
 x = []
 for _ in range(int(input())):
 	sum = 0
